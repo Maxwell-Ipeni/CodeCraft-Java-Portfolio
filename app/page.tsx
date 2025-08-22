@@ -32,7 +32,7 @@ import Image from "next/image"
 
 export default function HomePage() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "0768610735"
+    const phoneNumber = "+254768610735"
     const message = "Hi! I'm interested in your web development and graphic design services."
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
@@ -82,6 +82,15 @@ export default function HomePage() {
     },
     {
       id: 2,
+      title: "Learn with Betty - Language Tutor",
+      category: "React, Next.js, Tailwind CSS, Vercel",
+      description:
+        "A modern, responsive language tutoring website for Betty Kimani featuring her English and Kiswahili teaching services, with booking system integration and beautiful UI design.",
+      image: "/images/betty-website.svg",
+      liveUrl: "https://learn-with-betty.vercel.app/",
+    },
+    {
+      id: 3,
       title: "Restaurant customer feedback",
       category: "Dashboard, Analytics, Customer Management, Feedbacks, React, Chart.js, Node.js, MongoDB",
       description:
@@ -90,7 +99,7 @@ export default function HomePage() {
       liveUrl: "https://example-restaurant-feedback.com",
     },
     {
-      id: 3,
+      id: 4,
       title: "Graphic Design",
       category: "Logo, Brand Identity, Posters, social media stories, Flyers",
       description: "Creative and original designs for your brand using adobe photoshop, Canva, Figma.",
@@ -98,7 +107,7 @@ export default function HomePage() {
       liveUrl: "https://example-photography.com",
     },
     {
-      id: 4,
+      id: 5,
       title: "UI/UX designing",
       category: "UI/UX Design",
       description: "Complete UI/UX design system for a fintech application with user research and prototyping.",
@@ -126,13 +135,14 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto">
             {/* Profile Picture */}
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg">
+              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-lg relative">
                 <Image
                   src="/images/passport-photo.png"
                   alt="Professional headshot"
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="128px"
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -145,7 +155,7 @@ export default function HomePage() {
             {/* Main Title */}
             <div className="mb-8">
               <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-                Java fullstack developer.
+                A Fullstack developer.
               </h2>
             </div>
 
@@ -221,13 +231,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-lg">
+              <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-lg relative">
                 <Image
                   src="/images/passport-photo.png"
                   alt="Professional headshot"
-                  width={320}
-                  height={400}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 320px"
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -236,7 +247,7 @@ export default function HomePage() {
             <div className="space-y-8">
               <div>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                I am a skilled Java Full-Stack Developer who builds scalable, 
+                I am a skilled Full-Stack Developer who builds scalable, 
                  secure web applications using Spring Boot, React, and cloud technologies. 
                 I solve critical problems like system fragmentation, poor performance, and legacy modernization. 
                 I streamline operations by integrating front-end and back-end systems for seamless data flow. 
@@ -312,7 +323,7 @@ export default function HomePage() {
             <p className="text-gray-600 dark:text-gray-400 mb-2">What I offer</p>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">My Services</h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              I am a Java fullstack web developer.
+              I am a fullstack developer.
             </p>
           </div>
 
@@ -389,7 +400,7 @@ export default function HomePage() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 mb-16">
             {projects.map((project) => (
               <Card
                 key={project.id}

@@ -9,19 +9,19 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MG Creatives - Web Development & Graphic Design Services",
+  title: "Portfolio - Full-Stack Developer & A Graphic Design",
   description:
-    "Professional Java fullstack web developer and graphic designer offering custom websites, web maintenance, logo design, and comprehensive digital solutions. We create, design, host, and maintain.",
+    "Professional Fullstack web developer and graphic designer offering custom websites, web maintenance, logo design, and comprehensive digital solutions. We create, design, host, and maintain.",
   keywords:
     "web design, graphic design, responsive websites, portfolio designer, freelance web developer, logo design, website maintenance, UI/UX design",
-  authors: [{ name: "MG Creatives" }],
+  authors: [{ name: "Maxwell." }],
   openGraph: {
     title: "MG Creatives - Web Development & Graphic Design Services",
     description:
-      "Professional Java fullstack web developer and graphic designer offering custom websites, web maintenance, logo design, and comprehensive digital solutions.",
+      "Professional fullstack developer and a graphic designer offering custom websites, web maintenance, logo design, and comprehensive digital solutions.",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'Maxwell'
 }
 
 export default function RootLayout({

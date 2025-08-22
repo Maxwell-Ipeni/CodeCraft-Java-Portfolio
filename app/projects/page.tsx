@@ -83,9 +83,9 @@ export default function ProjectsPage() {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  width={300}
-                  height={200}
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 300px"
+                  className="object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Add Live View button overlay for all projects */}
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

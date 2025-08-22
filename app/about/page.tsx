@@ -15,13 +15,14 @@ export default function AboutPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
-            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-lg">
+            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-lg relative">
               <Image
                 src="/images/passport-photo.png"
                 alt="Max passport headshot"
-                width={320}
-                height={400}
-                className="w-full h-full object-cover"
+                fill
+                sizes="(max-width: 1024px) 100vw, 320px"
+                className="object-cover"
+                priority
               />
             </div>
           </div>
@@ -30,7 +31,7 @@ export default function AboutPage() {
           <div className="space-y-8">
             <div>
               <p className="text-lg text-gray-700 leading-relaxed mb-8 text-left">
-              I am a skilled Java Full-Stack Developer who builds scalable, 
+              I am a skilled Full-Stack Developer who builds scalable, 
                secure web applications using Spring Boot, React, and cloud technologies. 
               I solve critical problems like system fragmentation, poor performance, 
               and legacy modernization. 
@@ -107,7 +108,7 @@ export default function AboutPage() {
                 <div className="flex items-start space-x-4">
                   <div className="w-3 h-3 bg-blue-500 rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-gray-900"> Java Fullstack Developer</h4>
+                    <h4 className="font-semibold text-gray-900"> Fullstack Developer</h4>
                     <p className="text-gray-600">Tech solution Inc.</p>
                     <p className="text-sm text-gray-600 mt-1">
                       Leading frontend development projects and mentoring junior developers.

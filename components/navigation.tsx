@@ -29,13 +29,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="#home" className="flex items-center space-x-2">
-            <Image
-              src="/images/mg-logo-main.jpg"
-              alt="MG Creatives"
-              width={40}
-              height={40}
-              className="w-10 h-10 object-contain"
-            />
+            <div className="w-10 h-10 relative">
+              <Image
+                src="/images/mg-logo-main.jpg"
+                alt="MG Creatives"
+                fill
+                sizes="40px"
+                className="object-contain"
+              />
+            </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white">Maxwell.</span>
           </Link>
 

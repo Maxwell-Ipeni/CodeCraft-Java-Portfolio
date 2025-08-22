@@ -10,14 +10,16 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/images/mg-logo-main.jpg"
-                alt="MG Creatives Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8 object-contain"
-              />
-              <span className="text-xl font-bold text-gray-900 dark:text-white">MG Creatives</span>
+              <div className="w-8 h-8 relative">
+                <Image
+                  src="/images/mg-logo-main.jpg"
+                  alt="Full-Stack Dev"
+                  fill
+                  sizes="32px"
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-xl font-bold text-gray-900 dark:text-white">Full-Stack-Dev</span>
             </Link>
             <p className="text-gray-600 dark:text-gray-400">Where Robust Back-End Meets Seamless Front-End.</p>
             <p className="text-gray-500 dark:text-gray-500 text-sm">
