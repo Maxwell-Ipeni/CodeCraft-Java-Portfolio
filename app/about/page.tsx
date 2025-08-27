@@ -89,7 +89,7 @@ export default function AboutPage() {
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Node.js",
+      "mySQL",
       "MongoDB",
       "Laravel framework(PHP)",
       "Adobe photoshop"

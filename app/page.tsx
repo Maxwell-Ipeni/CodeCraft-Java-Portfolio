@@ -266,7 +266,7 @@ export default function HomePage() {
                     <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Languages</h3>
                     <div className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
                       <div>HTML, CSS, JavaScript</div>
-                      <div>React.js, Next.js, Tailwind css</div>
+                      <div>React.js, mySQL, Tailwind css</div>
                     </div>
                   </CardContent>
                 </Card>
