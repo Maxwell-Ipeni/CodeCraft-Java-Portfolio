@@ -181,7 +181,7 @@ export default function ProjectsPage() {
                   "JavaScript & TypeScript",
                   "React & Next.js",
                   "Tailwind CSS",
-                  "Node.js",
+                  "mySQL",
                   "Git & GitHub",
                   "Responsive Design",
                   "API Integration",
